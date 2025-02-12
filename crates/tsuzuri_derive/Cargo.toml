@@ -1,0 +1,19 @@
+[package]
+name = "tsuzuri_derive"
+version = "2025.2.12"
+description = "Tsuzuri"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[lib]
+proc-macro = true
+
+[dependencies]
+syn = { version = "2.0", features = [
+  "full",
+  "extra-traits",
+  "parsing",
+  "printing",
+] }
+quote = "1.0"
+proc-macro2 = "1.0"

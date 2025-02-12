@@ -1,0 +1,19 @@
+[package]
+name = "axum_example"
+version = "2025.2.12"
+authors.workspace = true
+edition.workspace = true
+repository.workspace = true
+homepage.workspace = true
+documentation.workspace = true
+readme.workspace = true
+keywords.workspace = true
+license.workspace = true
+description = "Tsuzuri"
+
+[dependencies]
+axum = { version = "0.8" }
+serde = { version = "1.0", features = ["derive"] }
+tokio = { version = "1.0", features = ["full"] }
+tracing = "0.1"
+tracing-subscriber = { version = "0.3", features = ["env-filter"] }
